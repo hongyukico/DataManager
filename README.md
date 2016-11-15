@@ -12,7 +12,7 @@ for iOS and Android, by [ktb](https://github.com/hongyukico)
 ## Installation
 
 ```
-cordova plugin add cordova-plugin-ktb-dataManager
+cordova plugin add cordova-plugin-ktb-datamanager
 ```
 
 ### iOS specifics

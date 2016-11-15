@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "cordova"{
-	"id":"cordova-plugin-ktb-media"
+  "cordova":{
+	"id":"cordova-plugin-ktb-media",
 	"platforms":[
 		"android",
 		"ios"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hongyukico/cordova-plugin-datamanager.git"
+    "url": "git+https://github.com/hongyukico/cordova-plugin-ktb-datamanager.git"
   },
   "keywords": [
     "cordova",
@@ -23,8 +23,5 @@
   ],
   "author": "ktb",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hongyukico/cordova-plugin-datamanager/issues"
-  },
-  "homepage": "https://github.com/hongyukico/cordova-plugin-datamanager#readme"
+  "homepage": "https://github.com/hongyukico/cordova-plugin-ktb-datamanager#readme"
 }
