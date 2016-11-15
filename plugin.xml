@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-ktb-dataManager" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DataManager</name>
+    <js-module name="DataManager" src="www/DataManager.js">
+        <clobbers target="cordova.plugins.DataManager" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <!-- 替换插件类名 -->
+            <feature name="DataManager">
+                <param name="ios-package" value="CDVDataManager" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CDVDataManager.h" />
+        <source-file src="src/ios/CDVDataManager.m" />
+        <source-file src="src/ios/CDVWebDataManager.h" />
+        <source-file src="src/ios/CDVWebDataManager.m" />
+        <source-file src="src/ios/WebDataManager.plist" />
+    </platform>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <!-- 替换插件类名 -->
+            <feature name="DataManager">
+                <param name="android-package" value="com.ktb.plugin.DataManagerPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/DataManagerPlugin.java" target-dir="src/com/ktb/plugin" />
+		 <source-file src="src/android/ACache.java" target-dir="src/com/ktb/simplecache" />
+    </platform>
+</plugin>
